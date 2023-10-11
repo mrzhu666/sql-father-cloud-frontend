@@ -1,31 +1,6 @@
-# SQL Father - 模拟数据生成器（前端）
-
-> SQL 之父项目：快速生成 SQL 和模拟数据，大幅提高开发测试效率！
->
-> 前后端全栈项目 By [程序员鱼皮](https://docs.qq.com/doc/DUFFRVWladXVjeUxW)
->
-> **制作不易，请勿商用和二次售卖！！！**
+# sql-father-cloud 前端
 
 
-
-在线体验：[http://sqlfather.yupi.icu](http://sqlfather.yupi.icu)
-
-视频演示（使用教程）：[https://www.bilibili.com/video/BV1eP411N7B7/](https://www.bilibili.com/video/BV1eP411N7B7/)
-
-
-
-> 如果您觉得本项目有帮助，给 UP 主一个关注和三连就是最大的支持，谢谢！
-
-
-
-前端代码仓库：[https://github.com/liyupi/sql-father-frontend-public](https://github.com/liyupi/sql-father-frontend-public)
-
-后端代码仓库：[https://github.com/liyupi/sql-father-backend-public](https://github.com/liyupi/sql-father-backend-public)
-
-![](https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/1/1666090763987-f768817c-89d6-4326-b7e1-5ad06d5cc875-20221019132239543-20221019132502106-20221019132511275.png)
-
-
-⭐️ 我在自己的 [编程知识星球](https://yupi.icu) 内给大家详细解读了这个项目的创作思路 + 技术选型 + 系统设计 + 源码解读 + 简历写法分享，如果你希望把这个项目写到简历上、或者深入学习，欢迎 [加入我的星球](https://yupi.icu) 观看。
 
 
 ## 项目背景
@@ -302,12 +277,6 @@ npm run build
 ### 共享服务
 
 包括词库、表信息、字段信息共享，其实就是对这些实体的增删改查 web 服务，不多说了。
-
-
-
-## 更多讲解
-
-如果你希望获取该项目的完整详细讲解，欢迎加入 [鱼皮的编程知识星球](https://yupi.icu/) 。这是鱼皮的编程学习圈子，我会在圈子内带大家从 0 到 1 分析解读这个项目、1 对 1 回答大家的问题。不仅让你也能独立做一个、还会教你怎么把这个项目写到简历上，项目经历 + 1。
 
 
 

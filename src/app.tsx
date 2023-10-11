@@ -50,7 +50,8 @@ const isDev = process.env.NODE_ENV === 'development';
  * https://umijs.org/docs/max/request
  */
 export const request: RequestConfig = {
-  baseURL: isDev ? 'http://localhost:8102/api' : '你的线上接口地址',
+  // baseURL: isDev ? 'http://localhost:8102/api' : '你的线上接口地址',
+  baseURL: isDev ? 'http://localhost:8500/' : '你的线上接口地址',
   timeout: 10000,
   withCredentials: true,
   // other axios options you want

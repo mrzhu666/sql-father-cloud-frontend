@@ -83,7 +83,7 @@ const DictCard: React.FC<Props> = (props) => {
       <Card
         title={title}
         extra={
-          <Link to="/">
+          <Link to="/dict/add">
             <Button type="primary">创建词库</Button>
           </Link>
         }
