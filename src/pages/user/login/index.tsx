@@ -62,7 +62,7 @@ export default () => {
               size: 'large',
               prefix: <UserOutlined className={'prefixIcon'} />,
             }}
-            placeholder={'请输入账号'}
+            placeholder={'请输入账号：admin'}
             rules={[
               {
                 required: true,
@@ -76,7 +76,7 @@ export default () => {
               size: 'large',
               prefix: <LockOutlined className={'prefixIcon'} />,
             }}
-            placeholder={'请输入密码'}
+            placeholder={'请输入密码：12345678'}
             rules={[
               {
                 required: true,
