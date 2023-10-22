@@ -6,7 +6,7 @@ import JsonInputModal from '@/components/JsonInputModal';
 import SqlInputModal from '@/components/SqlInputModal';
 import { generateBySchema, getSchemaByExcel } from '@/services/sqlService';
 import { getTableInfoById } from '@/services/tableInfoService';
-import { PageContainer } from '@ant-design/pro-components';
+import { PageContainer,ProCard } from '@ant-design/pro-components';
 import {
   BackTop,
   Button,
@@ -151,50 +151,56 @@ const IndexPage: React.FC = () => {
     </Card>
   );
 
+  function PC(){
+    return
+  }
+
   return (
     <div id="indexPage">
       <PageContainer
-        title={
-          <>
-            快速生成 SQL 和模拟数据，大幅提高开发测试效率！
-            <a
-              href="https://www.bilibili.com/video/BV1eP411N7B7/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              查看视频教程
-            </a>
-          </>
-        }
-        extra={
-          <div style={{ marginLeft: 0 }}>
-            切换布局：
-            <Radio.Group onChange={onLayoutChange} value={layout}>
-              <Radio.Button value="input">配置</Radio.Button>
-              <Radio.Button value="half">同屏</Radio.Button>
-              <Radio.Button value="output">结果</Radio.Button>
-            </Radio.Group>
-          </div>
-        }
+          // title= " "
+          // title={
+          //   <>
+          //     快速生成 SQL 和模拟数据，大幅提高开发测试效率！
+          //     <a
+          //         href="https://www.bilibili.com/video/BV1eP411N7B7/"
+          //         target="_blank"
+          //         rel="noreferrer"
+          //     >
+          //       查看视频教程
+          //     </a>
+          //   </>
+          // }
+          extra={
+            <div style={{ marginLeft: 0 }}>
+              切换布局：
+              <Radio.Group onChange={onLayoutChange} value={layout}>
+                <Radio.Button value="input">配置</Radio.Button>
+                <Radio.Button value="half">同屏</Radio.Button>
+                <Radio.Button value="output">结果</Radio.Button>
+              </Radio.Group>
+            </div>
+          }
       >
         <Row gutter={[12, 12]}>
           <Col
-            xs={24}
-            xl={layout === 'half' ? 12 : 24}
-            order={layout === 'output' ? 2 : 1}
+              xs={24}
+              xl={layout === 'half' ? 12 : 24}
+              order={layout === 'output' ? 2 : 1}
           >
             {inputConfigView}
           </Col>
           <Col
-            xs={24}
-            xl={layout === 'half' ? 12 : 24}
-            order={layout === 'output' ? 1 : 2}
+              xs={24}
+              xl={layout === 'half' ? 12 : 24}
+              order={layout === 'output' ? 1 : 2}
           >
             <GenerateResultCard result={result} loading={genLoading} />
           </Col>
         </Row>
         <BackTop />
       </PageContainer>
+
       <AutoInputModal
         onSubmit={importTableSchema}
         visible={autoInputModalVisible}

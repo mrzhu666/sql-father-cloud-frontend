@@ -46,18 +46,18 @@ const FieldInfoPage: React.FC = () => {
   return (
     <div className="field-info">
       <PageContainer
-        title={
-          <>
-            参考或学习字段设计，高效完成建表！
-            <a
-              href="https://www.bilibili.com/video/BV1eP411N7B7/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              查看视频教程
-            </a>
-          </>
-        }
+        // title={
+        //   <>
+        //     参考或学习字段设计，高效完成建表！
+        //     <a
+        //       href="https://www.bilibili.com/video/BV1eP411N7B7/"
+        //       target="_blank"
+        //       rel="noreferrer"
+        //     >
+        //       查看视频教程
+        //     </a>
+        //   </>
+        // }
         extra={
           <div style={{ marginLeft: 0 }}>
             切换布局：
