@@ -52,7 +52,7 @@ const isDev = process.env.NODE_ENV === 'development';
  */
 export const request: RequestConfig = {
   // baseURL: isDev ? 'http://localhost:8102/api' : '你的线上接口地址',
-  baseURL: isDev ? 'http://localhost:8500/' : 'http://106.55.169.251/api',
+  baseURL: isDev ? 'http://localhost:8500/' : 'http://10.8.0.1/api',
   timeout: 10000,
   withCredentials: true,
   // other axios options you want
