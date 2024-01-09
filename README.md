@@ -1,5 +1,17 @@
 # sql-father-cloud 前端
 
+## 部署
+
+```
+npm run build
+```
+
+
+
+```bash
+bash docker.sh
+```
+
 
 
 
