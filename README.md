@@ -2,15 +2,33 @@
 
 ## 部署
 
+## 未安装nginx
+
+docker直接运行nginx
+
+- 构建静态文件
+
 ```
 npm run build
 ```
 
-
+- 运行
 
 ```bash
 bash docker.sh
 ```
+
+## 已安装nginx
+
+- 复制sql-father-cloud.conf文件到conf.d文件夹中
+
+- 构建文件
+
+```
+sudo bash build.sh
+```
+
+
 
 
 
