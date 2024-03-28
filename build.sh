@@ -1,4 +1,4 @@
-# 快速部署脚本
+# linux本地快速部署脚本
 
 echo `whoami`
 echo -e "\e[38;5;1m 清空文件夹 \e[0m"
