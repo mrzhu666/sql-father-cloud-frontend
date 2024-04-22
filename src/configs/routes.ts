@@ -27,9 +27,6 @@ export default [
     name: '创建词库',
     path: '/dict/add',
     component: 'dict/add',
-    wrappers: [
-      '@/wrappers/auth',
-    ],
   },
   {
     name: '创建词库成功',

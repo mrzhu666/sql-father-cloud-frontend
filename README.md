@@ -2,9 +2,34 @@
 
 ## 部署
 
-## 未安装nginx
+### Docker编译与运行
 
-docker直接运行nginx
+- 运行
+
+```sh
+docker stop sql-father-nginx
+docker rm sql-father-nginx
+docker rmi -f sql-father-nginx
+
+docker build -t sql-father-nginx .
+#docker run -d -p 80:80 --name sql-father-nginx sql-father-nginx
+```
+
+### 生产环境部署
+
+- 构建
+
+```
+docker compose -f docker-compose.yml build
+```
+
+- 镜像部署
+
+```
+docker stack deploy -c docker-compose.yml sql-father-cloud
+```
+
+### 已安装nginx
 
 - 构建静态文件
 
@@ -12,23 +37,19 @@ docker直接运行nginx
 npm run build
 ```
 
-- 运行
-
-```bash
-bash docker.sh
-```
-
-## 已安装nginx
-
 - 复制sql-father-cloud.conf文件到conf.d文件夹中
 
 - 构建文件
 
+```shell
+echo `whoami`
+echo "清空文件夹"
+sudo rm -rf /var/www/sql-father-cloud/*
+echo "构建静态文件"
+npm run build
+echo "复制文件"
+sudo cp -r ./dist/. /var/www/sql-father-cloud
 ```
-sudo bash build.sh
-```
-
-
 
 
 

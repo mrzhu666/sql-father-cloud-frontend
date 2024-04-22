@@ -1,0 +1,18 @@
+version: '3'
+services:
+  nginx:
+    image: sql-father-cloud-nginx
+    build: # 服务的 Docker 构建文件位置
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    networks:
+      - mynetwork
+    deploy:
+      placement:
+        constraints: [ node.labels.role==azure ]
+
+networks:
+  mynetwork:
+    external: true
